@@ -1,0 +1,14 @@
+<%- include('templates/header') %>
+
+    <h1>Entries</h1>
+    <% data.forEach(el=> { %>
+        <h2><%- el.title%></h2>
+        <h3> <%- el.category %> </h3>
+        <p> <%- el.content %> </p>
+        <p> <%- el.name %> </p>
+        <p> <%- (el.date).toString() %> </p>
+        <img src="<%- el.image %>" alt="">
+
+        <% }) %>
+
+            <%- include('templates/footer') %>
